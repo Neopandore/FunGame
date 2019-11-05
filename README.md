@@ -1,2 +1,0 @@
-# FunGame
-PropHunt like
