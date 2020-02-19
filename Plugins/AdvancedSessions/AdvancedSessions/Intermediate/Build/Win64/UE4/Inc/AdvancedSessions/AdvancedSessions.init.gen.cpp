@@ -31,9 +31,9 @@ void EmptyLinkFunctionForGeneratedCodeAdvancedSessions_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/AdvancedSessions",
 				SingletonFuncArray,
-				ARRAY_COUNT(SingletonFuncArray),
+				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x4B0E8A89,
+				0x13FDFD7A,
 				0xE4B3F93E,
 				METADATA_PARAMS(nullptr, 0)
 			};

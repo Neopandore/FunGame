@@ -24,7 +24,8 @@ enum class EBPOnlineSessionState : uint8;
 #endif
 #define ADVANCEDSESSIONS_AdvancedSessionsLibrary_generated_h
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_RPC_WRAPPERS \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_SPARSE_DATA
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execHasOnlineSubsystem) \
 	{ \
@@ -288,10 +289,11 @@ enum class EBPOnlineSessionState : uint8;
  \
 	DECLARE_FUNCTION(execGetCurrentSessionID_AsString) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_SessionID); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::GetCurrentSessionID_AsString(Z_Param_Out_SessionID); \
+		UAdvancedSessionsLibrary::GetCurrentSessionID_AsString(Z_Param_WorldContextObject,Z_Param_Out_SessionID); \
 		P_NATIVE_END; \
 	} \
  \
@@ -326,16 +328,18 @@ enum class EBPOnlineSessionState : uint8;
  \
 	DECLARE_FUNCTION(execIsPlayerInSession) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_PlayerToCheck); \
 		P_GET_UBOOL_REF(Z_Param_Out_bIsInSession); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::IsPlayerInSession(Z_Param_Out_PlayerToCheck,Z_Param_Out_bIsInSession); \
+		UAdvancedSessionsLibrary::IsPlayerInSession(Z_Param_WorldContextObject,Z_Param_Out_PlayerToCheck,Z_Param_Out_bIsInSession); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execGetSessionSettings) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumConnections); \
 		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumPrivateConnections); \
 		P_GET_UBOOL_REF(Z_Param_Out_bIsLAN); \
@@ -348,16 +352,17 @@ enum class EBPOnlineSessionState : uint8;
 		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::GetSessionSettings(Z_Param_Out_NumConnections,Z_Param_Out_NumPrivateConnections,Z_Param_Out_bIsLAN,Z_Param_Out_bIsDedicated,Z_Param_Out_bAllowInvites,Z_Param_Out_bAllowJoinInProgress,Z_Param_Out_bIsAnticheatEnabled,Z_Param_Out_BuildUniqueID,Z_Param_Out_ExtraSettings,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
+		UAdvancedSessionsLibrary::GetSessionSettings(Z_Param_WorldContextObject,Z_Param_Out_NumConnections,Z_Param_Out_NumPrivateConnections,Z_Param_Out_bIsLAN,Z_Param_Out_bIsDedicated,Z_Param_Out_bAllowInvites,Z_Param_Out_bAllowJoinInProgress,Z_Param_Out_bIsAnticheatEnabled,Z_Param_Out_BuildUniqueID,Z_Param_Out_ExtraSettings,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execGetSessionState) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_ENUM_REF(EBPOnlineSessionState,Z_Param_Out_SessionState); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::GetSessionState((EBPOnlineSessionState&)(Z_Param_Out_SessionState)); \
+		UAdvancedSessionsLibrary::GetSessionState(Z_Param_WorldContextObject,(EBPOnlineSessionState&)(Z_Param_Out_SessionState)); \
 		P_NATIVE_END; \
 	} \
  \
@@ -383,7 +388,7 @@ enum class EBPOnlineSessionState : uint8;
 	}
 
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execHasOnlineSubsystem) \
 	{ \
@@ -647,10 +652,11 @@ enum class EBPOnlineSessionState : uint8;
  \
 	DECLARE_FUNCTION(execGetCurrentSessionID_AsString) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_SessionID); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::GetCurrentSessionID_AsString(Z_Param_Out_SessionID); \
+		UAdvancedSessionsLibrary::GetCurrentSessionID_AsString(Z_Param_WorldContextObject,Z_Param_Out_SessionID); \
 		P_NATIVE_END; \
 	} \
  \
@@ -685,16 +691,18 @@ enum class EBPOnlineSessionState : uint8;
  \
 	DECLARE_FUNCTION(execIsPlayerInSession) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_PlayerToCheck); \
 		P_GET_UBOOL_REF(Z_Param_Out_bIsInSession); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::IsPlayerInSession(Z_Param_Out_PlayerToCheck,Z_Param_Out_bIsInSession); \
+		UAdvancedSessionsLibrary::IsPlayerInSession(Z_Param_WorldContextObject,Z_Param_Out_PlayerToCheck,Z_Param_Out_bIsInSession); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execGetSessionSettings) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumConnections); \
 		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumPrivateConnections); \
 		P_GET_UBOOL_REF(Z_Param_Out_bIsLAN); \
@@ -707,16 +715,17 @@ enum class EBPOnlineSessionState : uint8;
 		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::GetSessionSettings(Z_Param_Out_NumConnections,Z_Param_Out_NumPrivateConnections,Z_Param_Out_bIsLAN,Z_Param_Out_bIsDedicated,Z_Param_Out_bAllowInvites,Z_Param_Out_bAllowJoinInProgress,Z_Param_Out_bIsAnticheatEnabled,Z_Param_Out_BuildUniqueID,Z_Param_Out_ExtraSettings,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
+		UAdvancedSessionsLibrary::GetSessionSettings(Z_Param_WorldContextObject,Z_Param_Out_NumConnections,Z_Param_Out_NumPrivateConnections,Z_Param_Out_bIsLAN,Z_Param_Out_bIsDedicated,Z_Param_Out_bAllowInvites,Z_Param_Out_bAllowJoinInProgress,Z_Param_Out_bIsAnticheatEnabled,Z_Param_Out_BuildUniqueID,Z_Param_Out_ExtraSettings,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execGetSessionState) \
 	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
 		P_GET_ENUM_REF(EBPOnlineSessionState,Z_Param_Out_SessionState); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		UAdvancedSessionsLibrary::GetSessionState((EBPOnlineSessionState&)(Z_Param_Out_SessionState)); \
+		UAdvancedSessionsLibrary::GetSessionState(Z_Param_WorldContextObject,(EBPOnlineSessionState&)(Z_Param_Out_SessionState)); \
 		P_NATIVE_END; \
 	} \
  \
@@ -742,7 +751,7 @@ enum class EBPOnlineSessionState : uint8;
 	}
 
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_INCLASS_NO_PURE_DECLS \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAdvancedSessionsLibrary(); \
 	friend struct Z_Construct_UClass_UAdvancedSessionsLibrary_Statics; \
@@ -751,7 +760,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedSessionsLibrary)
 
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_INCLASS \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_INCLASS \
 private: \
 	static void StaticRegisterNativesUAdvancedSessionsLibrary(); \
 	friend struct Z_Construct_UClass_UAdvancedSessionsLibrary_Statics; \
@@ -760,7 +769,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedSessionsLibrary)
 
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_STANDARD_CONSTRUCTORS \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAdvancedSessionsLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAdvancedSessionsLibrary) \
@@ -773,7 +782,7 @@ private: \
 public:
 
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_ENHANCED_CONSTRUCTORS \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAdvancedSessionsLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -786,26 +795,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAdvancedSessionsLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAdvancedSessionsLibrary)
 
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_PRIVATE_PROPERTY_OFFSET
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_25_PROLOG
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_GENERATED_BODY_LEGACY \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_PRIVATE_PROPERTY_OFFSET
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_26_PROLOG
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_PRIVATE_PROPERTY_OFFSET \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_RPC_WRAPPERS \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_INCLASS \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_STANDARD_CONSTRUCTORS \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_PRIVATE_PROPERTY_OFFSET \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_SPARSE_DATA \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_RPC_WRAPPERS \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_INCLASS \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_GENERATED_BODY \
+#define E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_PRIVATE_PROPERTY_OFFSET \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_INCLASS_NO_PURE_DECLS \
-	D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_28_ENHANCED_CONSTRUCTORS \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_PRIVATE_PROPERTY_OFFSET \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_SPARSE_DATA \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_INCLASS_NO_PURE_DECLS \
+	E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -813,7 +824,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> ADVANCEDSESSIONS_API UClass* StaticClass<class UAdvancedSessionsLibrary>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID D__Documents_Unreal_Projects_VRExpPluginExp_COMPPLUGIN_PluginStaging_ALL_UE4_423_AS_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h
+#define CURRENT_FILE_ID E__Staging_AdvancedSessions_HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,20 +1,20 @@
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedExternalUILibrary.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsInterface.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsGameInstance.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsLibrary.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedIdentityLibrary.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessionsLibrary.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\BlueprintDataDefinitions.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedVoiceLibrary.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CancelFindSessionsCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CreateSessionCallbackProxyAdvanced.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindFriendSessionCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\EndSessionCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindSessionsCallbackProxyAdvanced.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetFriendsCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetRecentPlayersCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetUserPrivilegeCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LoginUserCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LogoutUserCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\SendFriendInviteCallbackProxy.h
-D:\Documents\Unreal Projects\VRExpPluginExp\COMPPLUGIN\PluginStaging_ALL\UE4_423_AS\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\UpdateSessionCallbackProxyAdvanced.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CancelFindSessionsCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedExternalUILibrary.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CreateSessionCallbackProxyAdvanced.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsInterface.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedIdentityLibrary.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedVoiceLibrary.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsLibrary.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\EndSessionCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsGameInstance.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindFriendSessionCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindSessionsCallbackProxyAdvanced.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetFriendsCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetUserPrivilegeCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LoginUserCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LogoutUserCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetRecentPlayersCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\SendFriendInviteCallbackProxy.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\UpdateSessionCallbackProxyAdvanced.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\BlueprintDataDefinitions.h
+E:\Staging\AdvancedSessions\HostProject\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessionsLibrary.h
